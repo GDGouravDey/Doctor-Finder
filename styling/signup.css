@@ -1,6 +1,6 @@
 :root {
     --input-padding-x: .75rem;
-    --input-padding-y: .4rem;
+    --input-padding-y: .5rem;
   }
   
   html,
@@ -27,7 +27,7 @@
   
   .form-label-group {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .form-label-group > input,
@@ -101,5 +101,5 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: -20px;
+    margin-left: -10px;
   }
