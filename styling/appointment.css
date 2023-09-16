@@ -1,0 +1,26 @@
+#appointment{
+    text-align: center;
+    padding-top: 30px;
+    margin: auto;
+}
+form {
+    font-weight: 500;
+    padding-top: 30px;
+    padding-left: 450px;
+    padding-right: 100px;
+    margin: auto;
+}
+.form-row {
+    padding-left: 15px;
+    padding-right: 75px;
+}
+.form-group {
+    padding-right: 50px;
+}
+.form-check {
+    padding-left: 35px;
+}
+.btn-primary {
+    margin-left: 200px;
+    margin-bottom: 30px;
+}

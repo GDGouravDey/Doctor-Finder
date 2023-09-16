@@ -1,0 +1,15 @@
+nav ul li {
+    padding-right: 30px;
+}
+.navbar-brand {
+    padding-right: 35px;
+}
+.nav-link{
+    margin-left:35px;
+}
+.navbar-nav .nav-item.active {
+    background: linear-gradient(to right,#0048ff 0%,#35c112 100%);
+    border: none;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+}
