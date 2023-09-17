@@ -90,7 +90,7 @@
         console.log("Email: " + responsePayload.email);
         console.log("Image URL: " + responsePayload.picture);
       }
-      function decodeJwtresponse(data) {
+      function decodeJwtResponse(data) {
         var tokens = data.split(".");
         return JSON.parse(atob(tokens[1]));
       }
