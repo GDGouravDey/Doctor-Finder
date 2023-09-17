@@ -72,31 +72,46 @@
       <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
       <label for="confirmPassword">Confirm Password</label>
     </div>
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember Me on This Device
-      </label>
-    </div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
     <div class="or-container"><div class="line-separator"></div> <div class="or-label">OR</div><div class="line-separator"></div></div>
     <div class="google-signin-text"><p>Sign Up using Google</p></div>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <div class="signup"><p>Already Have an Account? <a href="./login.html">Click Here</a></p></div>
+    <!--<div class="g-signin2" data-onsuccess="handleCredentialResponse"></div>-->
+    <div id="g_id_onload"
+     data-client_id="357398660492-8ntmim2amsa8tknt4nokrmuf645ipcs1.apps.googleusercontent.com"
+     data-context="signin"
+     data-login_uri="https://gdgouravdey.github.io/Doctor-Finder/"
+     data-itp_support="true">
+    </div>
+    <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="continue_with" data-size="large" data-logo_alignment="center"></div>
+    <div class="signup"><p>Already have an Account? <a href="./login.html">Click Here</a></p></div>
     <div class="privacy"><p><a href="./privacy.html">Click Here</a> to see our Privacy Policy</p></div>
+    <!--<a href="#" onclick="signOut();">Sign out</a>-->
     <p class="mt-5 mb-3 text-muted text-center">Doctor Finder &copy; 2023</p>
   </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script> 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>   
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
     <script>
-      function onSignIn(googleUser) {
-        var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+      function handleCredentialResponse(response) {
+        const responsePayload = decodeJwtResponse(response.credential);
+        console.log("Signed Up Successfully!");
+        console.log("ID: " + responsePayload.sub);
+        console.log("Name: " + responsePayload.name);
+        console.log("Email: " + responsePayload.email);
+        console.log("Image URL: " + responsePayload.picture);
       }
+      function decodeJwtResponse(data) {
+        var tokens = data.split(".");
+        return JSON.parse(atob(tokens[1]));
+      }
+      //function signOut() {
+        //var auth2 = gapi.auth2.getAuthInstance();
+        //auth2.signOut().then(function () {
+        //console.log('User signed out.');
+        //});
+      //}
     </script>
 </body>
 </html>
