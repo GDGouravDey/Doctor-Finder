@@ -90,6 +90,7 @@
     <script>
       function handleCredentialResponse(response) {
         const responsePayload = decodeJwtResponse(response.credential);
+        console.log("Signed In Successfully!");
         console.log("ID: " + responsePayload.sub);
         console.log("Name: " + responsePayload.name);
         console.log("Email: " + responsePayload.email);
