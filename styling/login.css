@@ -102,7 +102,7 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: -5px;
+    margin-left: -px;
   }
   .or-container {
     align-items: center;
@@ -131,8 +131,4 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: -10px;
-}
-#g_id_onload {
-  padding-left: 48px;
 }
