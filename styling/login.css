@@ -87,12 +87,12 @@
     text-align: center;
     margin-top: 0px;
     margin-bottom: -5px;
-    margin-left: -10px;
+    margin-left: -5px;
   }
   .g-signin2 {
       margin:auto;
       padding:auto;
-      padding-left: 130px;
+      padding-left: 135px;
       padding-bottom: 20px;
   }
   .signup {
@@ -102,7 +102,7 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: -20px;
+    margin-left: -5px;
   }
   .or-container {
     align-items: center;
@@ -112,13 +112,24 @@
 }
 
 .line-separator {
-    background-color: #ccc;
+    background-color: #262626c4;
     flex-grow: 5;
     height: 1px;
 }
 
 .or-label {
+    color: rgb(45, 45, 45);
+    font-size: 17px;
     flex-grow: 1;
     margin: 0 15px;
     text-align: center;
+}
+.privacy {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #444;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -10px;
 }
