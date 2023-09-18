@@ -1,11 +1,11 @@
 nav ul li {
-    padding-right: 30px;
+    padding-right: 2vw;
 }
 .navbar-brand {
-    padding-right: 35px;
+    padding-right: 5vw;
 }
 .nav-link{
-    margin-left:35px;
+    margin-left: 2vw;
 }
 .navbar-nav .nav-item.active {
     background: linear-gradient(to right,#0048ff 0%,#35c112 100%);
