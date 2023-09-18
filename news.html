@@ -1,53 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Finder</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styling/style.css">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html">
-            <img src="./assets/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Doctor Finder
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./appointment.html">Appointment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./department.html">Departments</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./doctor.html">Doctors</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">Log In / Sign Up</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Finder</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styling/style.css">
+  <link rel="stylesheet" href="./styling/news.css">
 </head>
+
 <body>
-    <div id="contact">
-      <h2>Example News Page</h2>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Doctor Finder
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./appointment.html">Appointment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./department.html">Departments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./doctor.html">Doctors</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html">Log In / Sign Up</a>
+        </li>
+      </ul>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>    
+  </nav>
+  <section class="section section--background section--news mt-5 mb-5">
+    <div class="container">
+      <h1>Recent News Headlines</h1>
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="box-news">
+            <div class="row">
+              <div class="col-lg-3 col-4 pr-1">
+                <img alt="Dengue and More" class="img-fluid" src="./assets/E.jpg">
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3>Dengue and More: Kolkata Doctors see Dual Infection spurt, flag Treatment concerns</h3>
+                <p>September 17, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-news">
+            <div class="row">
+              <div class="col-lg-3 col-4 pr-1">
+                <img alt="2nd Attempt in Bengal" class="img-fluid" src="./assets/D.png">
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3>2nd Attempt in Bengal: 16-year-old undergoes lung transplant, organ flown in from Odisha</h3>
+                <p>August 26, 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="box-news">
+            <div class="row">
+              <div class="col-lg-3 col-4 pr-1">
+                <img src="./assets/A.jpg" class="img-fluid" alt="Stem Cell Research">
+              </div>
+              <div class="col-lg-9 col-8 pl-xl-4 pr-xl-0">
+                <h3>New Stem Cell Research Lab created in Govt Hospital to bolster Medical research</h3>
+                <p>September 19, 2023</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-12">
+
+          <div class="box-news">
+            <div class="row">
+              <div class="col-lg-3 col-4 pr-1">
+                <img src="./assets/B.jpg" class="img-fluid" alt="Doctor Felicitated">
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3>Eminent Dr Biswas of Oncology Dept felicitated by the Prime Minister for his Cancer Research</h3>
+                <p>September 17, 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="box-news">
+            <div class="row">
+              <div class="col-lg-3 col-4 pr-1">
+                <img alt="Free Bone Marrow Transplant" class="img-fluid" src="./assets/F.png">
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3>Govt run NRS Medical College and Hospital perform free Bone Marrow Transplant for more than 100
+                  patients</h3>
+                <p>September 5, 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="box-news">
+            <div class="row">
+              <div class="col-lg-3 col-4 pr-1">
+                <img src="./assets/C.webp" class="img-fluid" alt="Extortion Calls">
+              </div>
+              <div class="col-lg-9 col-8">
+                <h3>Kolkata Doctors get 'Suicide' Extortion Calls</h3>
+                <p>September 3, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

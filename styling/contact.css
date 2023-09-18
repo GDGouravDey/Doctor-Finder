@@ -1,0 +1,107 @@
+form {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 68vh;
+}
+.row {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(120, 115, 115, 0.504);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-container button:hover {
+    transform: scale(1.1);
+}
+#message, #feedback{
+    resize: none;
+    height: 200px;
+}
+.contact-container input:hover, .contact-container textarea:hover {
+    border-color: #747575;
+}
+.star img, .mail img{
+    max-height: 300px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.rate {
+    float: left;
+    height: 46px;
+    margin-top: -0.5rem;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:35px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}

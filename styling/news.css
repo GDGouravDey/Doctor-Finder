@@ -1,0 +1,23 @@
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.box-news img {
+    margin-top: 12px;
+    border-radius: 10%;
+    transition: all 0.5s ease-in-out;
+}
+.box-news img:hover {
+    transform: scale(1.1);
+}
+.box-news {
+    padding: 0.3rem 0.5rem 0rem 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #f0eeee;
+    box-shadow: 4px 2px 4px 0 rgba(0,0,0,0.2);
+    border-radius: 4%;
+}
+.box-news img[alt="Extortion Calls"] {
+    padding-bottom: 48px;
+}
