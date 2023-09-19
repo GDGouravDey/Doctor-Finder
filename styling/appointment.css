@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/doctor.png');
+    background-image: url('../assets/transparent_doctor.png');
     background-repeat: no-repeat;
     background-position: center center;
 }
