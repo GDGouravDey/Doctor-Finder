@@ -4,7 +4,7 @@ form {
     margin: 0;
     padding: 0;
     align-items: center;
-    height: 68vh;
+    height: 64vh;
 }
 .row {
     margin: auto;
@@ -45,7 +45,7 @@ form {
 }
 
 .contact-container button {
-    padding: 10px 20px;
+    padding: 7px 20px;
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -104,4 +104,18 @@ form {
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
+}
+.about {
+    width: 93vh;
+    max-height: 60vh;
+    text-align: center;
+    color: #0048ff;
+    background-image: linear-gradient(to right,#0048ff 0%,#35c112 100%); 
+}
+.about img {
+    border-radius: 8%;
+    margin-top: 16vh;
+}
+.about h2 {
+    margin-top: -7vh;
 }

@@ -58,7 +58,7 @@
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" placeholder="Enter Name" spellcheck="false" autocomplete="off" required>
       <label for="rating">Give your Rating:</label>
-      <div class="rate">
+      <div class="rate" id="star-rating">
         <input type="radio" id="star5" name="rate" value="5" />
         <label for="star5" title="text">5 stars</label>
         <input type="radio" id="star4" name="rate" value="4" />
@@ -76,8 +76,9 @@
       <button type="submit">Submit</button>
     </form>
   </div>
-  <div>
-    <h2>Sample About Us</h2>
+  <div class="about">
+    <img src="./assets/logo.png" alt="IMG" class="logo" width="300px">
+    <h2>Doctor Finder</h2>
   </div>
   <div class="contact-container">
     <div class="mail" data-tilt data-tilt-scale="1.1">

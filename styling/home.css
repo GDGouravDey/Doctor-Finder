@@ -23,9 +23,7 @@
 #services {
     padding-top: 20px;
     padding-left: 50px;
-}
-#services p {
-    font-size: 21px;
+    margin-bottom: -20px;
 }
 #images {
     padding-top: 20px;
@@ -77,8 +75,9 @@
     padding-top: 20px;
     padding-left: 50px;
 }
-#consult p {
-    font-size: 21px;
+#consult p, #services p {
+    color: rgba(42, 41, 41, 0.78);
+    font-size: 23px;
 }
 #consult figure {
     display: inline-block;
@@ -95,3 +94,4 @@
     height: auto;
     border-radius: 50%;
   }
+  
