@@ -1,24 +1,35 @@
+body {
+    background-image: url("/assets/news.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .container h1 {
     font-size: 2.5rem;
     margin-top: -1rem;;
     margin-bottom: 3rem;
-    text-align: center;
+    margin-left: 17vw;
+    color: whitesmoke;
 }
 .box-news img {
     margin-top: 12px;
     border-radius: 10%;
     transition: all 0.5s ease-in-out;
 }
-.box-news img:hover {
-    transform: scale(1.1);
-}
 .box-news {
     padding: 0.3rem 0.5rem 0rem 0.5rem;
     margin-bottom: 1rem;
     border: 2px solid #f0eeeecc;
-    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 4px 4px rgba(255, 255, 255, 0.2);
     border-radius: 4%;
+    transition: all 0.5s ease-in-out;
+    color: whitesmoke;
+    backdrop-filter: blur(14px);
 }
 .box-news img[alt="Extortion Calls"] {
     padding-bottom: 48px;
+}
+.box-news:hover {
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.4);
+    transform: scale(1.01);
+    cursor: pointer;
 }

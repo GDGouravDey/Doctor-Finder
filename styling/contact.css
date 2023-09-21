@@ -1,3 +1,6 @@
+body {
+    background-color: white;
+}
 form {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
@@ -71,12 +74,18 @@ form {
     border-color: #747575;
 }
 
-.star img,
+.star img {
+    max-height: 300px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .mail img {
     max-height: 300px;
     width: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .rate {
@@ -136,8 +145,9 @@ form {
     text-align: center;
     color: #0048ff;
     background: linear-gradient(-45deg, #0aea20, #08b0ed, #08e1ed, #00ff9d);
-    background-size: 200% 200%;
+    background-size: 250% 250%;
     animation: gradient 15s ease infinite;
+    border-radius: 10px;
 }
 
 @keyframes gradient {
