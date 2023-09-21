@@ -8,6 +8,7 @@ h1 {
     margin-bottom: 20px;
     transition: all 0.5s ease-in-out;
     font-size: 1.12em;
+    opacity: 95%;
 }
 .card:hover {
     box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.4);
