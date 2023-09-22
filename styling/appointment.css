@@ -1,8 +1,4 @@
-body {
-    background-image: url('../assets/transparent_doctor.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 #appointment{
     text-align: center;
     padding-top: 30px;
