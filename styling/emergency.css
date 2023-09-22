@@ -1,0 +1,5 @@
+@media (min-width: 1800px) and (max-width: 2200px) {
+    .btn-primary {
+        margin-left: 18vw;
+    }
+}
