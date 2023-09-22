@@ -12,7 +12,7 @@ html, body {
 form {
     font-weight: 500;
     padding-top: 30px;
-    padding-left: 450px;
+    padding-left: 300px;
     padding-right: 100px;
 }
 
@@ -33,14 +33,22 @@ form {
     margin-bottom: 30px;
 }
 
+#a, #b, #c {
+    margin-left: 2.6vw;
+}
 @media (min-width: 1800px) and (max-width: 2200px) {
     body {
         background-position-y: 100px;
         background-size: 100%;
     }
 
+    #a, #b, #c {
+        margin-left: 4vw;
+    }
+
     form {
-        padding-left: 550px;
+        padding-left: 300px;
+        padding-bottom: 27vh;
     }
 
     .btn-primary {
