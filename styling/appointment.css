@@ -36,7 +36,7 @@ form {
 @media (min-width: 1800px) and (max-width: 2200px) {
     body {
         background-position-y: 100px;
-        background-size: 90%;
+        background-size: 100%;
     }
 
     form {

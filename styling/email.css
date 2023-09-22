@@ -16,6 +16,12 @@ height: 100%;
 #email, #otp {
     padding-bottom: 5vh; font-size: 2rem; font-weight: bold;
 }
+#send, #verify, #cancel, #resend {
+    transition: all 0.3s ease-in-out;
+}
+#send:hover, #verify:hover, #cancel:hover, #resend:hover {
+    transform: scale(1.1);
+}
 @media (min-width: 1800px) and (max-width: 2200px) {
     #email, #otp {
         padding-bottom: 4vh; font-size: 3rem; font-weight: bold;
