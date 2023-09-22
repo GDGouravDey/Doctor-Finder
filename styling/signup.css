@@ -136,3 +136,8 @@
 #g_id_onload {
   padding-left: 48px;
 }
+@media (min-width: 1800px) and (max-width: 2200px) {
+  .form-signin {
+    padding-top: 15vh;
+  }
+}

@@ -24,6 +24,8 @@
     padding-top: 20px;
     padding-left: 50px;
     margin-bottom: -20px;
+    align-items: center;
+    text-align: center;
 }
 #images {
     padding-top: 20px;
@@ -72,8 +74,9 @@
     transform: scale(1.1);
 }
 #consult {
-    padding-top: 20px;
-    padding-left: 50px;
+    padding-top: 2vh;
+    align-items: center;
+    text-align: center;
 }
 #consult p, #services p {
     color: rgba(42, 41, 41, 0.78);
@@ -94,3 +97,12 @@
     height: auto;
     border-radius: 50%;
   }
+
+@media (min-width: 1800px) and (max-width: 2200px) {
+    .carousel-item img{
+        height: 80vh;
+    }
+    .carousel a {
+        padding-top: 400px;
+    }
+}

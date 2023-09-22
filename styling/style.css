@@ -2,13 +2,13 @@ body {
     background-color: rgba(245, 245, 245, 0.973);
 }
 nav ul li {
-    padding-right: 2vw;
+    padding-right: 1vw;
 }
 .navbar-brand {
-    padding-right: 5vw;
+    padding-right: 1vw;
 }
 .nav-link{
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 .navbar-nav .nav-item.active {
     background: linear-gradient(to right,#0048ff 0%,#35c112 100%);

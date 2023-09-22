@@ -1,7 +1,7 @@
 body {
     background-image: url('../assets/transparent_doctor.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
 }
 #appointment{
     text-align: center;
@@ -11,7 +11,7 @@ body {
 form {
     font-weight: 500;
     padding-top: 30px;
-    padding-left: 450px;
+    padding-left: 500px;
     padding-right: 100px;
     margin: auto;
 }
@@ -28,4 +28,13 @@ form {
 .btn-primary {
     margin-left: 200px;
     margin-bottom: 30px;
+}
+@media (min-width: 1800px) and (max-width: 2200px) {
+    body {
+        background-position-y: 100px;
+        background-size: 90%;
+    }
+    form {
+        padding-left: 600px;
+    }
 }

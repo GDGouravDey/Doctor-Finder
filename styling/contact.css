@@ -184,3 +184,17 @@ form {
     font-size: 24px;
     text-align: left;
 }
+@media (min-width: 1800px) and (max-width: 2200px) {
+    .about {
+        width: 40vw;
+        max-height: 50vh;
+    }
+    .about h2{
+        margin-top: -5vh;
+    }
+    .about-us{
+        padding: auto 1vw;
+        margin-top: 19vh;
+        height: 60vh;
+    }
+}

@@ -132,3 +132,8 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+@media (min-width: 1800px) and (max-width: 2200px) {
+  .form-signin {
+    padding-top: 15vh;
+  }
+}
