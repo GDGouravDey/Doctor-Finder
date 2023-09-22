@@ -1,38 +1,48 @@
-
-#appointment{
+html, body {
+    background: linear-gradient(-45deg, #93a5cf 0%,#e4efe9 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#appointment {
     text-align: center;
     padding-top: 30px;
     margin: auto;
 }
+
 form {
     font-weight: 500;
     padding-top: 30px;
     padding-left: 450px;
     padding-right: 100px;
-    margin: auto;
 }
+
 .form-row {
     padding-left: 15px;
-    padding-right: 75px;
 }
+
 .form-group {
     padding-right: 50px;
 }
+
 .form-check {
     padding-left: 35px;
 }
+
 .btn-primary {
     margin-left: 255px;
     margin-bottom: 30px;
 }
+
 @media (min-width: 1800px) and (max-width: 2200px) {
     body {
         background-position-y: 100px;
         background-size: 90%;
     }
+
     form {
         padding-left: 550px;
     }
+
     .btn-primary {
         margin-left: 17vw;
     }
