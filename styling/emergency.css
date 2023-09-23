@@ -1,5 +1,18 @@
+.btn-primary {
+    margin-left: 26.1vw;
+}
+.form-group {
+    margin-left: 6vw;
+    padding-bottom: 4vh;
+}
+form {
+    padding-bottom: 60vh;
+}
 @media (min-width: 1800px) and (max-width: 2200px) {
+    .form-group {
+        margin-left: 9vw;
+    }
     .btn-primary {
-        margin-left: 28vw;
+        margin-left: 32vw;
     }
 }
