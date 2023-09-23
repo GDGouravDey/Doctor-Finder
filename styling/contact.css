@@ -189,8 +189,11 @@ form {
         width: 40vw;
         max-height: 50vh;
     }
-    .about h2{
+    .about h2 {
         margin-top: -5vh;
+    }
+    .about-us h2{
+        margin-top: -15vh;
     }
     .about-us{
         padding: auto 1vw;
