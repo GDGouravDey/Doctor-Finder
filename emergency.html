@@ -62,11 +62,40 @@
         <option value="Orthopaedic">Orthopaedic</option>
       </select>
     </div>
+    <div class="form-group col-md-8" id="ailment">
+      <label for="ailment-category">Specify Ailment</label>
+      <select id="ailment-category" class="form-control" autocomplete="off" required onchange="toggleDescription()">
+        <option selected>Choose...</option>
+        <option value="Chest Pain">Chest Pain</option>
+        <option value="Severe Headaches">Severe Headaches</option>
+        <option value="Seizures">Seizures</option>
+        <option value="Slurred Speech">Slurred Speech</option>
+        <option value="Vomiting Blood">Vomiting Blood</option>
+        <option value="Severe Abdominal Pain">Severe Abdominal Pain</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group col-md-8" id="desc" style="display:none;">
+      <label for="description">Description</label>
+      <textarea class="form-control" id="description" rows="3" placeholder="Describe your ailment here..."
+        required style="resize: none;"></textarea>
+    </div>
     <button type="submit" class="btn btn-primary">Search Doctor</button>
   </form>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    function toggleDescription() {
+      const option = document.getElementById('ailment-category').value;
+      const describe = document.getElementById('desc');
+      if (option === 'Other') {
+        describe.style.display = 'block';
+      } else {
+        describe.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 
 </html>

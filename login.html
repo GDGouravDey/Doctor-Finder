@@ -49,40 +49,54 @@
       </ul>
     </div>
   </nav>
-  <form class="form-signin">
-    <div class="text-center mb-4">
-      <img class="mb-4" src="./assets/favicon.png" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Sign In Portal</h1>
-      <p>Sign In to the Doctor Finder Website.</p>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="submit" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="submit" class="toggle-btn" onclick="signup()">Sign Up</button>
+      </div>
+      <div class="social-icons">
+        <img src="./assets/icons8-google.svg" alt="google" width="30px" height="30px">
+        <img src="./assets/icons8-facebook.svg" alt="facebook" width="30px" height="30px">
+        <img src="./assets/icons8-microsoft.svg" alt="microsoft" width="30px" height="30px">
+      </div>
+      <form id="login" class="input-group">
+        <input type="email" class="input-field" placeholder="Email Address" required>
+        <input type="password" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box" id="check"><label for="check">Remember Password</label>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+      <form id="signup" class="input-group">
+        <input type="text" class="input-field" placeholder="Enter Name" required>
+        <input type="email" class="input-field" placeholder="Email Address" required>
+        <input type="password" class="input-field" placeholder="Enter Password" required>
+        <input type="password" class="input-field" placeholder="Confirm Password" required>
+        <input type="checkbox" class="check-box" id="terms" required><label for="terms">I accept the Terms & Conditions</label>
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
     </div>
-
-    <div class="form-label-group">
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" spellcheck="false" required
-        autofocus>
-      <label for="inputEmail">Email address</label>
-    </div>
-
-    <div class="form-label-group">
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <label for="inputPassword">Password</label>
-    </div>
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember Me on This Device
-      </label>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
-    <div class="signup">
-      <p>New User? <a href="./signup.html">Click Here</a></p>
-    </div>
-    <div class="privacy">
-      <p><a href="./privacy.html">Click Here</a> to see our Privacy Policy</p>
-    </div>
-    <p class="mt-5 mb-3 text-muted text-center">Doctor Finder &copy; 2023</p>
-  </form>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("signup");
+    var z = document.getElementById("btn");
+
+    function signup() {
+      x.style.left = "-25vw";
+      y.style.left = "6vw";
+      z.style.left = "110px";
+    }
+
+    function login() {
+      x.style.left = "6vw";
+      y.style.left = "40vw";
+      z.style.left = "0px";
+    }
+  </script>
 </body>
 
 </html>
