@@ -72,7 +72,7 @@
         <input type="email" class="input-field" placeholder="Email Address" required>
         <input type="password" class="input-field" placeholder="Enter Password" required>
         <input type="password" class="input-field" placeholder="Confirm Password" required>
-        <input type="checkbox" class="check-box" id="terms" required><label for="terms">I accept the Terms & Conditions</label>
+        <input type="checkbox" class="check-box" id="terms" required><label id="accept" for="terms">I accept the Terms & Conditions</label>
         <button type="submit" class="submit-btn">Sign Up</button>
       </form>
     </div>
@@ -86,15 +86,35 @@
     var z = document.getElementById("btn");
 
     function signup() {
-      x.style.left = "-25vw";
-      y.style.left = "6vw";
-      z.style.left = "110px";
+      var screenWidth = window.innerWidth;
+      if(screenWidth >= 1800)
+      {
+        x.style.left = "-25vw";
+        y.style.left = "8vw";
+        z.style.left = "110px";
+      }
+      else
+      {
+        x.style.left = "-25vw";
+        y.style.left = "6vw";
+        z.style.left = "110px";
+      }
     }
 
     function login() {
-      x.style.left = "6vw";
-      y.style.left = "40vw";
-      z.style.left = "0px";
+      var screenWidth = window.innerWidth;
+      if(screenWidth >= 1800)
+      {
+        x.style.left = "8vw";
+        y.style.left = "40vw";
+        z.style.left = "0px";
+      }
+      else
+      {
+        x.style.left = "6vw";
+        y.style.left = "40vw";
+        z.style.left = "0px";
+      }
     }
   </script>
 </body>
