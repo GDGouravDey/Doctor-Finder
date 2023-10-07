@@ -49,15 +49,15 @@
     </nav>
     <div id="chatbot">
         <div class="search">
-          <div class="search_box">
-            <input type="text" class="input" placeholder="Ask me Anything...">
-            <button type="submit" class="btn">
-              <img src="./assets/icons8-discord.svg" alt="bot" width="30px">
-              <p>Search</p>
-            </button>
-          </div>
+            <div class="search_box">
+                <input type="text" class="input" placeholder="Ask me Anything...">
+                <button type="submit" class="btn">
+                    <img src="./assets/icons8-discord.svg" alt="bot" width="30px">
+                    <p>Search</p>
+                </button>
+            </div>
         </div>
-      </div>
+    </div>
     <div class="container">
         <div class="title">Emergency Appointment</div>
         <form id="A" display="style:block">
@@ -106,99 +106,99 @@
             <button type="button" class="btn btn-primary" id="proceed" onclick="check()">Proceed</button>
         </form>
         <form id="B" style="display:none;">
-                <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Name</span>
-                        <input type="text" placeholder="Enter Full Name" id="name" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Date of Birth</span>
-                        <input type="date" class="form-control" id="inputDate"
-                            placeholder="Enter Date of Birth" autocomplete="off" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Gender</span>
-                        <select id="gender" class="form-control" autocomplete="off" required>
-                            <option selected>Choose...</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Mobile Number</span>
-                        <input type="tel" placeholder="Enter Mobile No." pattern="[0-9]{10}" id="mobile" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="email" class="form-control" id="inputEmail"
-                            placeholder="Enter Email Address" autocomplete="off" required>
-                    </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" placeholder="Enter Full Name" id="name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date of Birth</span>
+                    <input type="date" class="form-control" id="inputDate" placeholder="Enter Date of Birth"
+                        autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Gender</span>
+                    <select id="gender" class="form-control" autocomplete="off" required>
+                        <option selected>Choose...</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Mobile Number</span>
+                    <input type="tel" placeholder="Enter Mobile No." pattern="[0-9]{10}" id="mobile" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address"
+                        autocomplete="off" required>
+                </div>
                 <button type="submit" class="btn btn-primary" id="request"">Request
                     Appointment</button>
         </form>
     </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-    <script>
-        function check() {
-            const type = document.getElementById('type').value;
-            const category = document.getElementById('category').value;
-            const ailment = document.getElementById('ailment-category').value;
-            const description = document.getElementById('description').value;
-            if(type === 'Choose...') {
-                alert('Please choose a type of emergency');
-            }
-            else if (type === 'Choose By Department' && category === 'Choose...') {
-                alert('Please choose a department');
-            }
-            else if (type === 'Specify Problem' && ailment === 'Choose...') {
-                alert('Please specify your problem');
-            }
-            else if (type === 'Specify Problem' && ailment === 'Other' && description === '') {
-                alert('Please describe your problem');
-            }
-            else {
-                toggle();
-            }
-        }
-        function toggle() {
-            const A = document.getElementById('A');
-            const B = document.getElementById('B');
-            A.style.display = 'none';
-            B.style.display = 'block';
-        }
-        function toggleType() {
-            const type = document.getElementById('type').value;
-            const form = document.getElementById('form');
-            const ailment = document.getElementById('ailment');
-            const describe = document.getElementById('desc');
-            if (type === 'Choose By Department') {
-                form.style.display = 'block';
-                ailment.style.display = 'none';
-                describe.style.display = 'none';
-            }
-            else if (type === 'Specify Problem') {
-                form.style.display = 'none';
-                ailment.style.display = 'block';
-            }
-            else {
-                form.style.display = 'none';
-                ailment.style.display = 'none';
-                describe.style.display = 'none';
-            }
-        }
-        function toggleDescription() {
-            const option = document.getElementById('ailment-category').value;
-            const describe = document.getElementById('desc');
-            if (option === 'Other') {
-                describe.style.display = 'block';
-            } else {
-                describe.style.display = 'none';
-            }
-        }
-    </script>
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+                    <script>
+                        function check() {
+                            const type = document.getElementById('type').value;
+                            const category = document.getElementById('category').value;
+                            const ailment = document.getElementById('ailment-category').value;
+                            const description = document.getElementById('description').value;
+                            if (type === 'Choose...') {
+                                alert('Please choose a type of emergency');
+                            }
+                            else if (type === 'Choose By Department' && category === 'Choose...') {
+                                alert('Please choose a department');
+                            }
+                            else if (type === 'Specify Problem' && ailment === 'Choose...') {
+                                alert('Please specify your problem');
+                            }
+                            else if (type === 'Specify Problem' && ailment === 'Other' && description === '') {
+                                alert('Please describe your problem');
+                            }
+                            else {
+                                toggle();
+                            }
+                        }
+                        function toggle() {
+                            const A = document.getElementById('A');
+                            const B = document.getElementById('B');
+                            A.style.display = 'none';
+                            B.style.display = 'block';
+                        }
+                        function toggleType() {
+                            const type = document.getElementById('type').value;
+                            const form = document.getElementById('form');
+                            const ailment = document.getElementById('ailment');
+                            const describe = document.getElementById('desc');
+                            if (type === 'Choose By Department') {
+                                form.style.display = 'block';
+                                ailment.style.display = 'none';
+                                describe.style.display = 'none';
+                            }
+                            else if (type === 'Specify Problem') {
+                                form.style.display = 'none';
+                                ailment.style.display = 'block';
+                            }
+                            else {
+                                form.style.display = 'none';
+                                ailment.style.display = 'none';
+                                describe.style.display = 'none';
+                            }
+                        }
+                        function toggleDescription() {
+                            const option = document.getElementById('ailment-category').value;
+                            const describe = document.getElementById('desc');
+                            if (option === 'Other') {
+                                describe.style.display = 'block';
+                            } else {
+                                describe.style.display = 'none';
+                            }
+                        }
+                    </script>
 </body>
 
 </html>
