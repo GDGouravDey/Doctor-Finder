@@ -1,0 +1,184 @@
+body {
+
+    background: linear-gradient(-90deg, #ddd6f3, #faaca8);
+}
+
+.container {
+    margin-top: 2vh;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    height: 70vh;
+}
+
+#A {
+    padding-top: 5vh;
+}
+
+.container .title {
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #ff0000;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box details {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+#proceed {
+    margin-top: 3vh;
+    margin-left: 18vw;
+}
+
+#gender {
+    margin-top: 1vh;
+    height: 6vh;
+}
+
+#inputEmail {
+    width: 42vw;
+}
+
+#request {
+    margin-left: 15vw;
+}
+
+#chatbot {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex-box;
+    align-items: center;
+    text-align: center;
+}
+
+#chatbot .search .search_box .input {
+    margin: 0vh auto;
+    padding-left: 2vw;
+    width: 30vw;
+    height: 8vh;
+    border-radius: 25px 0px 0px 25px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    box-shadow: -3px 0 10px 1px rgb(233, 233, 233);
+}
+
+#chatbot .btn {
+    margin-left: -1vw;
+    width: 10vw;
+    height: 8vh;
+    background-color: black;
+    border-radius: 0px 25px 25px 0px;
+    border: none;
+    box-shadow: 6px 0 10px 1px rgb(233, 233, 233);
+    padding-top: 10px;
+    font-size: large;
+    color: white;
+}
+
+#chatbot {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    flex: 1;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+#chatbot .search_box .btn img {
+    margin-top: -2px;
+    margin-left: -1vw;
+    margin-right: 1vw;
+}
+
+#chatbot .search_box .btn p {
+    padding-top: 12px;
+}
+
+@media (min-width: 1800px) and (max-width: 2200px) {
+    #proceed {
+        margin-left: 14.5vw;
+    }
+    #inputEmail {
+        width: 32.5vw;
+    }
+    #request {
+        margin-left: 12vw;
+    }
+    .container {
+        height: 55vh;
+    }
+    #chatbot {
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+}

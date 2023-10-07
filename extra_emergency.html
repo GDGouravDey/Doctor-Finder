@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Finder</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styling/style.css">
+  <link rel="stylesheet" href="./styling/appointment.css">
+  <link rel="stylesheet" href="./styling/emergency.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./assets/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Doctor Finder
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./department.html">Departments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./appointment.html">Appointment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Emergency</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./news.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html">Log In / Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="appointment">
+    <h1>Emergency</h1>
+  </div>
+  <div id="chatbot">
+    <!-- <h3>Hello, What do you want to Search?</h3> -->
+    <div class="search">
+      <div class="search_box">
+        <input type="text" class="input" placeholder="Ask me Anything...">
+        <button type="submit" class="btn">
+          <img src="./assets/icons8-discord.svg" alt="bot" width="30px">
+          <p>Search</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <form>
+    <div class="form-group col-md-8" id="choose">
+      <label for="type">Type of Emergency</label>
+      <select id="type" class="form-control" autocomplete="off" required onchange="toggleType()">
+        <option selected>Choose...</option>
+        <option value="Choose By Department">Choose By Department</option>
+        <option value="Specify Ailment">Specify Ailment</option>
+      </select>
+    </div>
+    <div class="form-group col-md-8" id="form" style="display:none;">
+      <label for="category">Choose Department</label>
+      <select id="category" class="form-control" autocomplete="off" required>
+        <option selected>Choose...</option>
+        <option value="General Surgery">General Surgery</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Orthopaedic">Orthopaedic</option>
+      </select>
+    </div>
+    <div class="form-group col-md-8" id="ailment" style="display:none;">
+      <label for="ailment-category">Specify Ailment</label>
+      <select id="ailment-category" class="form-control" autocomplete="off" required onchange="toggleDescription()">
+        <option selected>Choose...</option>
+        <option value="Chest Pain">Chest Pain</option>
+        <option value="Severe Headaches">Severe Headaches</option>
+        <option value="Seizures">Seizures</option>
+        <option value="Slurred Speech">Slurred Speech</option>
+        <option value="Vomiting Blood">Vomiting Blood</option>
+        <option value="Severe Abdominal Pain">Severe Abdominal Pain</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group col-md-8" id="desc" style="display:none;">
+      <label for="description">Description</label>
+      <textarea class="form-control" id="description" rows="4" placeholder="Describe your ailment here..."
+        required style="resize: none;"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" id="proceed">Proceed</button>
+  </form>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    function toggleType() {
+      const type = document.getElementById('type').value;
+      const form = document.getElementById('form');
+      const ailment = document.getElementById('ailment');
+      if (type === 'Choose By Department') {
+        form.style.display = 'block';
+        ailment.style.display = 'none';
+      }
+      else if(type === 'Specify Ailment'){
+        form.style.display = 'none';
+        ailment.style.display = 'block';
+      }
+      else {
+        form.style.display = 'none';
+        ailment.style.display = 'none';
+      }
+    }
+    function toggleDescription() {
+      const option = document.getElementById('ailment-category').value;
+      const describe = document.getElementById('desc');
+      if (option === 'Other') {
+        describe.style.display = 'block';
+      } else {
+        describe.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+
+</html>

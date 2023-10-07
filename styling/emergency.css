@@ -8,6 +8,73 @@
 form {
     padding-bottom: 60vh;
 }
+#chatbot {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex-box;
+    align-items: center;
+    text-align: center;
+}
+
+#chatbot .search .search_box .input {
+    margin: 5vh auto;
+    padding-left: 2vw;
+    width: 30vw;
+    height: 8vh;
+    border-radius: 25px 0px 0px 25px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    box-shadow: -5px 0 20px 3px #0463fc4a;
+}
+
+#chatbot .btn {
+    margin-left: -1vw;
+    width: 10vw;
+    height: 8vh;
+    background-color: black;
+    border-radius: 0px 25px 25px 0px;
+    border: none;
+    box-shadow: 5px 0 20px 6px #0463fc4a;
+    padding-top: 10px;
+    font-size: large;
+    color: white;
+}
+
+#chatbot {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    flex: 1;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
+}
+#chatbot .search_box .btn img {
+    margin-top: -2px;
+    margin-left: -1vw;
+    margin-right: 1vw;
+}
+
+#chatbot .search_box .btn p {
+    padding-top: 12px;
+}
+#proceed {
+    margin-left: 26vw;
+}
 @media (min-width: 1800px) and (max-width: 2200px) {
     .form-group {
         margin-left: 9vw;
