@@ -168,17 +168,25 @@ form .gender-details .category {
     #proceed {
         margin-left: 14.5vw;
     }
+
     #inputEmail {
         width: 32.5vw;
     }
+
     #request {
         margin-left: 12vw;
     }
+
     .container {
         height: 55vh;
     }
+
     #chatbot {
         padding-top: 10vh;
         padding-bottom: 5vh;
+    }
+
+    #chatbot .btn {
+        font-size: 24px;
     }
 }

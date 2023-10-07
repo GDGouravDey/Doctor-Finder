@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
+
 .container {
     margin-top: 5vh;
     margin-bottom: 20vh;
@@ -10,11 +11,13 @@ body {
     padding: 25px 30px;
     border-radius: 5px;
 }
+
 .container .title {
     font-size: 25px;
     font-weight: 500;
     position: relative;
 }
+
 .container .title::before {
     content: '';
     position: absolute;
@@ -24,20 +27,24 @@ body {
     width: 30px;
     background: #9b59b6;
 }
-.container form .user-details{
+
+.container form .user-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0 12px 0;
 }
+
 form .user-details .input-box {
     margin: 20px 0 12px 0;
     width: calc(100% / 2 - 20px);
 }
+
 .user-details .input-box details {
     font-weight: 500;
     margin-bottom: 5px;
 }
+
 .user-details .input-box input {
     height: 45px;
     width: 100%;
@@ -50,19 +57,24 @@ form .user-details .input-box {
     margin-top: 6px;
     margin-bottom: 16px;
 }
-.user-details .input-box input:focus, .user-details .input-box input:valid {
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
     border-color: #9b59b6;
 }
+
 form .gender-details .gender-title {
     font-size: 20px;
     font-weight: 500;
 }
+
 form .gender-details .category {
     display: flex;
     width: 80%;
     margin: 14px 0;
     justify-content: space-between;
 }
+
 #chatbot {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -80,7 +92,7 @@ form .gender-details .category {
     border: none;
     outline: none;
     font-size: 1em;
-    box-shadow: -5px 0 20px 3px #0463fc4a;
+    box-shadow: -2px 0 10px 1px rgb(233, 233, 233);
 }
 
 #chatbot .btn {
@@ -90,7 +102,7 @@ form .gender-details .category {
     background-color: black;
     border-radius: 0px 25px 25px 0px;
     border: none;
-    box-shadow: 5px 0 20px 6px #0463fc4a;
+    box-shadow: 2px 0 10px 1px rgb(233, 233, 233);
     padding-top: 10px;
     font-size: large;
     color: white;
@@ -118,6 +130,7 @@ form .gender-details .category {
     margin-left: 10px;
     justify-content: center;
 }
+
 #chatbot .search_box .btn img {
     margin-top: -2px;
     margin-left: -1vw;
@@ -127,47 +140,67 @@ form .gender-details .category {
 #chatbot .search_box .btn p {
     padding-top: 12px;
 }
+
 #inputHospital {
     width: 41.6vw;
     height: 6vh;
 }
-#inputState, #category, #inputDate {
+
+#inputState,
+#category,
+#inputDate {
     height: 6vh;
 }
+
 .form-group {
     width: 20.5vw;
 }
+
 .form-group-2 {
     width: 19.5vw;
 }
+
 .btn-primary {
     margin-top: 5vh;
     margin-left: 15vw;
 }
+
 @media (min-width: 1800px) and (max-width: 2200px) {
     #chatbot {
         padding-top: 0vh;
         padding-bottom: 0vh;
     }
+
     .container {
         margin-top: 2vh;
     }
+
     #inputHospital {
         width: 32.3vw;
         height: 4.5vh;
     }
-    #inputState, #category, #inputDate {
+
+    #inputState,
+    #category,
+    #inputDate {
         height: 4.5vh;
     }
+
     .form-group {
         margin-top: -5px;
         width: 16vw;
     }
+
     .form-group-2 {
         width: 15vw;
     }
+
     .btn-primary {
         margin-top: 5vh;
         margin-left: 12vw;
+    }
+
+    #chatbot .btn {
+        font-size: 24px;
     }
 }

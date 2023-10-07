@@ -184,6 +184,7 @@
 #chatbot .search_box .btn p {
     padding-top: 12px;
 }
+
 @media (min-width: 1800px) and (max-width: 2200px) {
     .carousel-item img {
         height: 50vh;
@@ -191,5 +192,9 @@
 
     .carousel a {
         padding-top: 400px;
+    }
+
+    #chatbot .btn {
+        font-size: 24px;
     }
 }
