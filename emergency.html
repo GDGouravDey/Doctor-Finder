@@ -66,7 +66,7 @@
                 <select id="type" class="form-control" autocomplete="off" required onchange="toggleType()">
                     <option selected>Choose...</option>
                     <option value="Choose By Department">Choose By Department</option>
-                    <option value="Specify Ailment">Specify Ailment</option>
+                    <option value="Specify Problem">Specify Problem</option>
                 </select>
             </div>
             <div class="form-group col-md-12" id="form" style="display:none;">
@@ -80,7 +80,7 @@
                 </select>
             </div>
             <div class="form-group col-md-12" id="ailment" style="display:none;">
-                <label for="ailment-category">Specify Ailment</label>
+                <label for="ailment-category">Specify Problem</label>
                 <select id="ailment-category" class="form-control" autocomplete="off" required
                     onchange="toggleDescription()">
                     <option selected>Choose...</option>
@@ -153,11 +153,11 @@
             else if (type === 'Choose By Department' && category === 'Choose...') {
                 alert('Please choose a department');
             }
-            else if (type === 'Specify Ailment' && ailment === 'Choose...') {
-                alert('Please specify your ailment');
+            else if (type === 'Specify Problem' && ailment === 'Choose...') {
+                alert('Please specify your problem');
             }
-            else if (type === 'Specify Ailment' && ailment === 'Other' && description === '') {
-                alert('Please describe your ailment');
+            else if (type === 'Specify Problem' && ailment === 'Other' && description === '') {
+                alert('Please describe your problem');
             }
             else {
                 toggle();
@@ -179,7 +179,7 @@
                 ailment.style.display = 'none';
                 describe.style.display = 'none';
             }
-            else if (type === 'Specify Ailment') {
+            else if (type === 'Specify Problem') {
                 form.style.display = 'none';
                 ailment.style.display = 'block';
             }
