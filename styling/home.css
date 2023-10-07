@@ -186,6 +186,9 @@
 }
 
 @media (min-width: 1800px) and (max-width: 2200px) {
+    #chatbot .search .search_box .input {
+        font-size: 1.2em;
+    }
     .carousel-item img {
         height: 50vh;
     }
@@ -195,6 +198,6 @@
     }
 
     #chatbot .btn {
-        font-size: 24px;
+        font-size: 22px;
     }
 }

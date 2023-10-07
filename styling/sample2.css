@@ -165,6 +165,9 @@ form .gender-details .category {
 }
 
 @media (min-width: 1800px) and (max-width: 2200px) {
+    #chatbot .search .search_box .input {
+        font-size: 1.2em;
+    }
     #proceed {
         margin-left: 14.5vw;
     }
@@ -187,6 +190,6 @@ form .gender-details .category {
     }
 
     #chatbot .btn {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
