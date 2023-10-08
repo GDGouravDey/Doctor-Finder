@@ -2,6 +2,10 @@ body {
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
+.title {
+    margin-bottom: 5vh;
+}
+
 .container {
     margin-top: 5vh;
     margin-bottom: 20vh;
@@ -148,8 +152,15 @@ form .gender-details .category {
 
 #inputState,
 #category,
-#inputDate {
+#inputDate,
+#gender {
     height: 6vh;
+}
+
+#gen {
+    padding-bottom: 0.5vh;
+    padding-top: 2.4vh;
+    padding-left: 1vw;
 }
 
 .form-group {
@@ -158,6 +169,11 @@ form .gender-details .category {
 
 .form-group-2 {
     width: 19.5vw;
+}
+
+#inputState {
+    width: 41.7vw;
+    margin-left: -1vw;
 }
 
 .btn-primary {
@@ -170,6 +186,15 @@ form .gender-details .category {
 }
 
 @media (min-width: 1800px) and (max-width: 2200px) {
+    .title {
+        margin-bottom: 3vh;
+    }
+
+    #inputState {
+        width: 32.4vw;
+        margin-left: -1vw;
+    }
+
     #chatbot .search .search_box .input {
         font-size: 1.2em;
     }
@@ -190,7 +215,8 @@ form .gender-details .category {
 
     #inputState,
     #category,
-    #inputDate {
+    #inputDate,
+    #gender {
         height: 4.5vh;
     }
 

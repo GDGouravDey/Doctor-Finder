@@ -93,7 +93,16 @@
           <span class="details">Age</span>
           <input id="age" type="text" placeholder="Enter Your Age" required>
         </div>
-        <div class="form-group" style="padding-bottom:0.5vh; padding-top: 2.2vh; padding-left: 1vw;">
+        <div class="form-group" id="gen">
+          <label for="gender">Gender</label>
+          <select id="gender" class="form-control" autocomplete="off" required>
+            <option selected>Choose...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group-3" style="padding-bottom: 5vh; padding-top: 0vh; padding-left: 1vw;">
           <label for="inputState">State</label>
           <select id="inputState" class="form-control" autocomplete="off" required>
             <option selected>Choose...</option>
