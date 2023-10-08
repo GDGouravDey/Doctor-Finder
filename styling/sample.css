@@ -39,9 +39,16 @@ body {
     margin: 20px 0 12px 0;
 }
 
-form .user-details .input-box {
-    margin: 20px 0 12px 0;
+#nm,
+#ph,
+#code,
+#ag {
+    margin: 20px 0 6px 0;
     width: calc(100% / 2 - 20px);
+}
+
+#add {
+    margin: 20px 0 12px 0;
 }
 
 .user-details .input-box details {
@@ -59,7 +66,7 @@ form .user-details .input-box {
     font-size: 16px;
     transition: 0.3s;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
 }
 
 .user-details .input-box input:focus,
@@ -171,9 +178,8 @@ form .gender-details .category {
     width: 19.5vw;
 }
 
-#inputState {
-    width: 41.7vw;
-    margin-left: -1vw;
+#state {
+    margin-top: 2.2vh;
 }
 
 .btn-primary {
@@ -185,14 +191,27 @@ form .gender-details .category {
     background: black;
 }
 
+.add {
+    width: 41.7vw;
+}
+
+#address {
+    width: 41.7vw;
+    height: 6vh;
+}
+
 @media (min-width: 1800px) and (max-width: 2200px) {
     .title {
         margin-bottom: 3vh;
     }
 
-    #inputState {
+    #address {
         width: 32.4vw;
-        margin-left: -1vw;
+        height: 5vh;
+    }
+
+    #inputState {
+        width: 15vw;
     }
 
     #chatbot .search .search_box .input {
