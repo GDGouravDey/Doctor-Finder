@@ -3,8 +3,8 @@ body {
 }
 nav ul li {
     font-size: large;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.9vw;
+    padding-right: 0.9vw;
 }
 .navbar .navbar-nav .nav-item .nav-link {
     color: rgb(0, 0, 0);
@@ -73,11 +73,11 @@ nav ul li {
 @media (min-width: 1800px) and (max-width: 2200px) {
     nav ul li {
         font-size: larger;
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
+        padding-left: 1.4vw;
+        padding-right: 1.4vw;
     }
     .navbar-brand {
-        padding-left: 5vw;
+        padding-left: 5.2vw;
     }
     .navbar .navbar-nav .nav-item:hover::after {
         width: 72%;
