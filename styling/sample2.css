@@ -10,7 +10,7 @@ body {
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
-    height: 70vh;
+    height: 71.5vh;
 }
 
 #A {
@@ -100,13 +100,13 @@ form .gender-details .category {
 
 #request {
     margin: auto;
-    margin-top: -0.5vh;
+    margin-top: 1vh;
     margin-left: 10vw;
 }
 
 #back {
     margin: auto;
-    margin-top: -0.5vh;
+    margin-top: 1vh;
     margin-left: -10vw;
 }
 
