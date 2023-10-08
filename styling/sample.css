@@ -165,10 +165,15 @@ form .gender-details .category {
     margin-left: 15vw;
 }
 
+.navbar .navbar-nav .nav-item::after {
+    background: black;
+}
+
 @media (min-width: 1800px) and (max-width: 2200px) {
     #chatbot .search .search_box .input {
         font-size: 1.2em;
     }
+
     #chatbot {
         padding-top: 0vh;
         padding-bottom: 0vh;
