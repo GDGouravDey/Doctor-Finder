@@ -94,8 +94,20 @@ form .gender-details .category {
     width: 42vw;
 }
 
+#em {
+    width: 42vw;
+}
+
 #request {
-    margin-left: 15vw;
+    margin: auto;
+    margin-top: -0.5vh;
+    margin-left: 10vw;
+}
+
+#back {
+    margin: auto;
+    margin-top: -0.5vh;
+    margin-left: -10vw;
 }
 
 #chatbot {
@@ -168,16 +180,25 @@ form .gender-details .category {
     #chatbot .search .search_box .input {
         font-size: 1.2em;
     }
+
     #proceed {
         margin-left: 14.5vw;
     }
 
-    #inputEmail {
+    #inputEmail, #em {
         width: 32.5vw;
     }
 
     #request {
-        margin-left: 12vw;
+        margin: auto;
+        margin-top: 1.5vh;
+        margin-left: 8.5vw;
+    }
+
+    #back {
+        margin: auto;
+        margin-top: 1.5vh;
+        margin-left: -7vw;
     }
 
     .container {

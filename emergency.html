@@ -14,41 +14,41 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./department.html">Departments</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./appointment.html">Appointment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">About Us</a>
-            </li>
-            <a class="navbar-brand" href="#">
-              <img src="./assets/favicon.png" width="35" height="35" class="d-inline-block align-top" alt="">
-              Arogya Sampark
-            </a>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">Log In / Sign Up</a>
-            </li>
-            <li class="nav-item-emergency">
-              <a class="nav-link" href="#">Emergency</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./department.html">Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./appointment.html">Appointment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">About Us</a>
+                </li>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/favicon.png" width="35" height="35" class="d-inline-block align-top" alt="">
+                    Arogya Sampark
+                </a>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Log In / Sign Up</a>
+                </li>
+                <li class="nav-item-emergency">
+                    <a class="nav-link" href="#">Emergency</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
     <div id="chatbot">
         <div class="search">
             <div class="search_box">
@@ -130,77 +130,78 @@
                     <span class="details">Mobile Number</span>
                     <input type="tel" placeholder="Enter Mobile No." pattern="[0-9]{10}" id="mobile" required>
                 </div>
-                <div class="input-box">
+                <div class="input-box" id="em">
                     <span class="details">Email</span>
                     <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address"
                         autocomplete="off" required>
                 </div>
-                <button type="submit" class="btn btn-primary" id="request"">Request
+                <button type="submit" class="btn btn-primary" id="request">Request
                     Appointment</button>
+                <button type="submit" class="btn btn-primary" id="back" onclick="toggle('B','A')">Go Back</button>
         </form>
     </div>
     </div>
     <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-                    <script>
-                        function check() {
-                            const type = document.getElementById('type').value;
-                            const category = document.getElementById('category').value;
-                            const ailment = document.getElementById('ailment-category').value;
-                            const description = document.getElementById('description').value;
-                            if (type === 'Choose...') {
-                                alert('Please choose a type of emergency');
-                            }
-                            else if (type === 'Choose By Department' && category === 'Choose...') {
-                                alert('Please choose a department');
-                            }
-                            else if (type === 'Specify Problem' && ailment === 'Choose...') {
-                                alert('Please specify your problem');
-                            }
-                            else if (type === 'Specify Problem' && ailment === 'Other' && description === '') {
-                                alert('Please describe your problem');
-                            }
-                            else {
-                                toggle();
-                            }
-                        }
-                        function toggle() {
-                            const A = document.getElementById('A');
-                            const B = document.getElementById('B');
-                            A.style.display = 'none';
-                            B.style.display = 'block';
-                        }
-                        function toggleType() {
-                            const type = document.getElementById('type').value;
-                            const form = document.getElementById('form');
-                            const ailment = document.getElementById('ailment');
-                            const describe = document.getElementById('desc');
-                            if (type === 'Choose By Department') {
-                                form.style.display = 'block';
-                                ailment.style.display = 'none';
-                                describe.style.display = 'none';
-                            }
-                            else if (type === 'Specify Problem') {
-                                form.style.display = 'none';
-                                ailment.style.display = 'block';
-                            }
-                            else {
-                                form.style.display = 'none';
-                                ailment.style.display = 'none';
-                                describe.style.display = 'none';
-                            }
-                        }
-                        function toggleDescription() {
-                            const option = document.getElementById('ailment-category').value;
-                            const describe = document.getElementById('desc');
-                            if (option === 'Other') {
-                                describe.style.display = 'block';
-                            } else {
-                                describe.style.display = 'none';
-                            }
-                        }
-                    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        function check() {
+            const type = document.getElementById('type').value;
+            const category = document.getElementById('category').value;
+            const ailment = document.getElementById('ailment-category').value;
+            const description = document.getElementById('description').value;
+            if (type === 'Choose...') {
+                alert('Please choose a type of emergency');
+            }
+            else if (type === 'Choose By Department' && category === 'Choose...') {
+                alert('Please choose a department');
+            }
+            else if (type === 'Specify Problem' && ailment === 'Choose...') {
+                alert('Please specify your problem');
+            }
+            else if (type === 'Specify Problem' && ailment === 'Other' && description === '') {
+                alert('Please describe your problem');
+            }
+            else {
+                toggle('A', 'B');
+            }
+        }
+        function toggle(a, b) {
+            const A = document.getElementById(a);
+            const B = document.getElementById(b);
+            A.style.display = 'none';
+            B.style.display = 'block';
+        }
+        function toggleType() {
+            const type = document.getElementById('type').value;
+            const form = document.getElementById('form');
+            const ailment = document.getElementById('ailment');
+            const describe = document.getElementById('desc');
+            if (type === 'Choose By Department') {
+                form.style.display = 'block';
+                ailment.style.display = 'none';
+                describe.style.display = 'none';
+            }
+            else if (type === 'Specify Problem') {
+                form.style.display = 'none';
+                ailment.style.display = 'block';
+            }
+            else {
+                form.style.display = 'none';
+                ailment.style.display = 'none';
+                describe.style.display = 'none';
+            }
+        }
+        function toggleDescription() {
+            const option = document.getElementById('ailment-category').value;
+            const describe = document.getElementById('desc');
+            if (option === 'Other') {
+                describe.style.display = 'block';
+            } else {
+                describe.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
