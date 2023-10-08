@@ -1,2 +1,2 @@
-# Doctor-Finder (Frontend)
-## Live At: https://gdgouravdey.github.io/Doctor-Finder/
+# Arogya-Sampark (Frontend)
+## Live At: https://gdgouravdey.github.io/Arogya-Sampark/
