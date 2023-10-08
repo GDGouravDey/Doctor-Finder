@@ -13,7 +13,7 @@ body {
     font-size: 2.5rem;
     margin-top: -1rem;
     margin-bottom: 3rem;
-    margin-left: 24vw;
+    margin-left: 22vw;
     /* color: whitesmoke; */
 }
 
@@ -27,12 +27,18 @@ body {
     padding: 0.3rem 0.5rem 0rem 0.5rem;
     margin-bottom: 2rem;
     margin-right: 1vw;
-    border: 3px solid #d8d8d882;
-    box-shadow: 2px 2px 4px 4px rgba(27, 27, 27, 0.158);
-    border-radius: 4%;
+    /* border: 3px solid #d8d8d882; */
+    /* box-shadow: 2px 2px 4px 4px rgba(27, 27, 27, 0.158); */
+    /* border-radius: 4%; */
     transition: all 0.5s ease-in-out;
     /* color: whitesmoke; */
-    backdrop-filter: blur(24px);
+    /* backdrop-filter: blur(24px); */
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .box-news img[alt="Extortion Calls"] {
@@ -40,8 +46,8 @@ body {
 }
 
 .box-news:hover {
-    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
-    transform: scale(1.01);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.15);
+    transform: scale(1.015);
     cursor: pointer;
 }
 
@@ -54,13 +60,16 @@ body {
     .box-news {
         padding-left: 1rem;
     }
+
     .container h1 {
         font-size: 3rem;
         margin-left: 16vw;
     }
+
     .box-news {
         margin-bottom: 5vh;
     }
+
     .box-news img[alt="Extortion Calls"] {
         padding-bottom: 54px;
     }
